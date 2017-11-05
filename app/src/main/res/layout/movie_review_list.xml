@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="@dimen/recyclerview_item_padding"
+    android:paddingLeft="@dimen/recyclerview_item_padding"
+    android:paddingRight="@dimen/recyclerview_item_padding"
+    android:paddingTop="@dimen/recyclerview_item_padding">
+
+    <TextView
+        android:id="@+id/review_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:paddingStart="@dimen/review_author_padding_left"
+        android:paddingLeft="@dimen/review_author_padding_left"
+        android:paddingRight="@dimen/review_author_padding_right"
+        android:paddingEnd="@dimen/review_url_padding_right"
+        app:layout_constraintLeft_toRightOf="parent"
+        tools:text="@string/fake_review_author"/>
+
+    <TextView
+        android:id="@+id/review_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:paddingStart="@dimen/review_content_padding_left"
+        android:paddingLeft="@dimen/review_content_padding_left"
+        android:paddingRight="@dimen/review_content_padding_right"
+        android:paddingEnd="@dimen/review_url_padding_right"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_author"
+        tools:text="@string/fake_review_content" />
+
+    <TextView
+        android:id="@+id/review_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:paddingStart="@dimen/review_url_padding_left"
+        android:paddingLeft="@dimen/review_url_padding_left"
+        android:paddingRight="@dimen/review_url_padding_right"
+        android:paddingEnd="@dimen/review_url_padding_right"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_content"
+        android:paddingTop="@dimen/review_url_padding_top"
+        android:paddingBottom="@dimen/review_url_padding_bottom"
+        tools:text="@string/fake_review_url" />
+</android.support.constraint.ConstraintLayout>

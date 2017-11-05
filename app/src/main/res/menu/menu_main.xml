@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item android:id="@+id/action_sortbypopularity"
+        android:title="@string/action_sort_by_popularity"
+        android:orderInCategory="1"
+        app:showAsAction="collapseActionView" />
+    <item android:id="@+id/action_sortbyrate"
+        android:title="@string/action_sort_by_rate"
+        android:orderInCategory="2"
+        app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/action_sortbyfavorite"
+        android:title="@string/action_sort_by_favorite"
+        android:orderInCategory="3"
+        app:showAsAction="collapseActionView"/>
+
+</menu>

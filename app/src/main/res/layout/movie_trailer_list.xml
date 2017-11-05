@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--http://www.free-icons-download.net/images/video-play-button-icon-76432.png-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="@dimen/recyclerview_item_padding"
+    android:paddingLeft="@dimen/recyclerview_item_padding"
+    android:paddingRight="@dimen/recyclerview_item_padding"
+    android:paddingTop="@dimen/recyclerview_item_padding">
+
+    <ImageView
+        android:id="@+id/play_button_image"
+        android:layout_width="@dimen/trailer_list_play_button"
+        android:layout_height="@dimen/trailer_list_play_button"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:contentDescription="@string/trailer_image_description"
+        tools:src="@drawable/icon_play_button"
+        android:layout_marginStart="@dimen/trailer_play_button_margin_left"
+        android:layout_marginLeft="@dimen/trailer_play_button_margin_left"/>
+
+    <TextView
+        android:id="@+id/trailer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trailer_name_margin_left"
+        android:layout_marginStart="@dimen/trailer_name_margin_start"
+        android:paddingStart="@dimen/trailer_name_padding_left"
+        android:paddingLeft="@dimen/trailer_name_padding_left"
+        android:paddingRight="@dimen/trailer_name_padding_right"
+        android:paddingEnd="@dimen/trailer_name_padding_right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintLeft_toRightOf="@+id/play_button_image"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:text="@string/fake_trailer_name"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+</android.support.constraint.ConstraintLayout>
